@@ -11,10 +11,10 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="text-white">
     <div class="container">
       <div class="text-center mb-4">
-        <h1>Bootsrap 5 Responsive Grid</h1>
+        <h1 class="text-black">Bootsrap 5 Responsive Grid</h1>
         <h6 class="text-secondary">
           Layout a griglia con diversi breakpoint (sm,md,lg).
         </h6>
@@ -22,8 +22,8 @@
 
       <!-- Finish Header -->
 
-      <section class="row mb-4">
-        <div class="col-sm-12 col-md-6 col-lg-3 bg-light">
+      <section class="row mb-4 row-cols-sm-1 row-cols-md-2">
+        <div class="col-lg-3 bg-light text-black">
           <div class="px-2 py-3">
             <h2>Colonna 1</h2>
             <p>
@@ -32,7 +32,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-9 bg-secondary text-white">
+        <div class="col-lg-9 bg-secondary">
           <div class="px-2 py-3">
             <h2>Colonna 2</h2>
           <p>
@@ -45,8 +45,8 @@
 
       <!-- Finish First Row -->
 
-      <section class="row mb-4">
-        <div class="col-sm-6 col-md-4 text-white bg-primary">
+      <section class="row mb-4 row-cols-sm-2 row-cols-md-3">
+        <div class="bg-primary">
           <div class="px-2 py-3">
             <h2>Colonna 1</h2>
             <p>
@@ -55,7 +55,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 text-white bg-success">
+        <div class="bg-success">
           <div class="px-2 py-3">
             <h2>Colonna 2</h2>
             <p>
@@ -65,8 +65,7 @@
           </div>
           
         </div>
-        <div class="col-sm-12 col-md-4 text-white bg-danger">
-          <div class="m-3">
+        <div class="col-sm-12 bg-danger">
             <div class="px-2 py-3">
               <h2>Colonna 3</h2>
               <p>
@@ -74,10 +73,32 @@
                 dispositivi medi e più grandi.
               </p>
             </div>
-          </div>
         </div>
       </section>
+
       <!-- Finish Second Row -->
+
+    <section class="row mb-4 row-cols-sm-2 row-cols-md-4">
+      <div class="bg-info px-2 py-3">
+        <h2>Colonna 1</h2>
+        <p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
+      </div>
+      <div class="bg-warning px-2 py-3">
+        <h2>Colonna 2</h2>
+        <p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
+      </div>
+      <div class="bg-dark px-2 py-3">
+        <h2>Colonna 3</h2>
+        <p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
+      </div>
+      <div class="bg-light text-black px-2 py-3">
+        <h2>Colonna 4</h2>
+        <p>Metà larghezza su dispositivi piccoli e un quarto su dispositivi medi e più grandi.</p>
+      </div>
+    </section>
+
+    <!-- Finish Third Row -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
